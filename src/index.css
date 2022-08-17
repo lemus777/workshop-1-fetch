@@ -1,3 +1,46 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+.leading-6 {
+    color: darkolivegreen;
+}
+
+.mt-2 {
+    color: darkolivegreen;
+}
+
+.mt-4 {
+    color: olivedrab;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#app div {
+    background-color: darkolivegreen;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+#app div img {
+    margin-top: 8px;
+    max-width: 75%;
+    border-radius: 50%;
+}
+
+.productName {
+    font-size: 2em;
+    color: ghostwhite;
+}
+
+.productPrice {
+    font-size: 1.5em;
+    color: gainsboro;
+}
