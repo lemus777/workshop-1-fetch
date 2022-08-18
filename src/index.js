@@ -3,9 +3,9 @@ const URL_BASE = "https://platzi-avo.vercel.app";
 const appNode =document.querySelector('#app');
 
 const formatPrice = (price) => {
-    const newPrice = new window.Intl.NumberFormat('en-En', { // esto sale de la api, da formato a las monedas
+    const newPrice = new window.Intl.NumberFormat('es-ES', { // esto sale de la api, da formato a las monedas
         style: 'currency',
-        currency: 'GBP'
+        currency: 'EUR'
     }).format(price); // instanciamos de la api con new, aplicamos el metodo format con argumento price
     return newPrice; // retornamos el precio ya procesado, newPrice
 }
