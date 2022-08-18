@@ -1,0 +1,61 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+.leading-6 {
+    color: darkkhaki;
+}
+
+.mt-2 {
+    color: olive;
+}
+
+.mt-4 {
+    color: darkkhaki;
+}
+
+#app {
+    border-top: 1px solid darkkhaki;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 12px;
+    padding-top: 4px;
+}
+
+#app div {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app div img {
+    margin-top: 16px;
+    max-width: 75%;
+    border: 2px solid darkkhaki;
+    border-radius: 50%;
+}
+
+.productName {
+    font-size: 1.5em;
+    color: olive;
+}
+
+.productPrice {
+    font-size: 1em;
+    color: olive;
+}
+
+@media (max-width: 600px) {
+    #app {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productName {
+        font-size: 1em;
+    }
+
+    .productPrice {
+        font-size: 0.75em;
+    }
+}
